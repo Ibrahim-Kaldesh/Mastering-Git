@@ -1,0 +1,141 @@
+
+					     << Push & Pull Commands >>  
+
+
+- clone the Repo                -> git clone <repo linke from github>
+          
+- To see changes                -> git status
+  (step by step)              
+          
+- add files (staging)           -> git add <filename>
+          
+- commit changes                -> git commit -m "commit description"  
+          
+- get the branch_name           -> git branch
+          
+- get the remot_name            -> git remote -v
+          
+- puhs the commits              -> git push <remote_name (origin)> <branch_name (main)>
+          
+- pull commits (remote->local)  -> git pull origin
+          
+- initialize directory          
+  as a Repo                     -> git init
+          
+- push to remote                -> git remote add origin git@github.com:handle/repo_name.git
+          
+- pull then push Repo           
+  from your local to            -> git push -u origin main
+  remote                
+
+
+					  	<< Public key >>
+
+
+- Get Public Key             	-> ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+- To show the key contetnt      -> cat ~/.ssh/id_rsa.pub
+
+- successfully authenticated    -> ssh -T git@github.com
+
+
+					 	<< configuration >> 
+
+          
+- to get email                  -> git config --global user.email
+
+- to add email                  -> git config --global user.email "email"
+
+- to remove email               -> git config --global --unset user.email
+
+- to show config list           -> git config -l
+
+
+					  	<< Aliases >>  
+
+
+- make an Alias                 -> git config --global alias.<new_name(Alias)> <command>
+          
+- Know what the alias           
+  refers to                     -> git config --global alias.<new_name(Alias)>
+
+- show all aliaces in vscode    -> git config --global --edit
+        
+- create new branch             -> git branch  <branch_name> 
+        
+- siwthc to branch              -> git checkout  <branch_name>  
+
+- creat new branch and
+  switch to it 			-> git checkout -b <branch_name>
+  (2 X 1 )                 
+        
+- remove a branch                
+  (save_delete if not           -> git branch   -d <branch_name>
+  merged it will raise        
+  error)        
+        
+- remove a branch               -> git branch   -D <branch_name>            
+        
+- rename a branch               -> git branch   -m <branch_name>
+        
+- create new branch             -> git checkout -b <branch_name>
+  and swithc to it        
+        
+
+				     		<< stashing >> 
+
+
+- store uncommited files        -> git stash
+
+- stash with a meassage         -> git stash save "message"
+
+- see list of stashed files     -> git stash list
+
+- show a stashed file           -> git stash show  <stash@{id}(optional)>
+        
+- restore uncommitted files 
+  and removing it 		-> git stash pop   <stash@{id}(optional)>
+  from stash.     	
+
+- restore uncommitted files      
+  without removing it 		-> git stash apply <stash@{id}(optional)>
+  from stash.
+
+- remove a stashed file         -> git stash drop  <stash@{id}(optional)>
+
+- clear all the stash           -> git stash clear
+
+
+					<< Restore & Clean & Resetting Head >>
+
+
+- show all details about        -> git log
+  commits (q to exit from log)
+
+- show unstaged files           -> git clean -n
+
+- delete unstaged files         -> git clean -f
+
+- opend file with vscode        -> code <file_name>
+
+- unstaging return to wd        -> git reset head <filename>
+
+- ustaging 	                -> git restore --staged <filename>
+
+- to remove a commit            -> git reset --hard <hash commit>    
+  Followed by 			-> git push origin master --force
+
+	
+
+- to create ignore file	        -> touch .gitignore	   
+
+- create new tag                -> git tag <tag_name> 
+
+- create new tag (with commit)  -> git tag -a <tag_name> -m "message"          
+
+- show all tages                -> git tag
+
+- delete tag locally            -> git tag -d <tag_name>
+
+- delete tag remotely           -> git push origin --delete <tag_name>
+     
