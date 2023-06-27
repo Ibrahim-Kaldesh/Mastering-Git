@@ -13,10 +13,8 @@ This file contains the most frequently used git commands.With this file , I thin
 - learn how to delete a commit using head.
 
 ## Push & Pull Commands
-- clone the repo
- ```
-  git clone <repo linke from github
- ```          
+- clone the repo ```
+  git clone <repo linke from github ```          
           
 - To see changes (step by step)
   ```
