@@ -28,21 +28,45 @@ This file contains the most frequently used git commands.With this file , I thin
    git add <filename>
   ```
           
-- commit changes                -> git commit -m "commit description"  
+- commit changes
+  ```
+  git commit -m "commit description"
+  ```  
           
-- get the branch_name           -> git branch
+- get the branch_name
+   ```
+  git branch
+   ```
           
-- get the remot_name            -> git remote -v
+- get the remot_name
+ ```
+  git remote -v
+```
           
-- puhs the commits              -> git push <remote_name (origin)> <branch_name (main)>
+- puhs the commits
+  ```
+  git push <remote_name (origin)> <branch_name (main)>
+  ```            
           
-- pull commits (remote->local)  -> git pull origin
+- pull commits (remote->local)
+  ```
+  git pull origin
+  ```
           
 - initialize directory          
-  as a Repo                     -> git init
+  as a Repo
+  ```
+  git init
+  ```             
           
-- push to remote                -> git remote add origin git@github.com:handle/repo_name.git
+- push to remote
+  ```
+  git remote add origin git@github.com:handle/repo_name.git
+  ```
           
 - pull then push Repo           
-  from your local to            -> git push -u origin main
+  from your local to          
   remote
+  ```
+  git push -u origin main
+  ```
