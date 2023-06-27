@@ -40,7 +40,7 @@ This file contains the most frequently used git commands.With this file , I thin
           
 - get the remot_name
  ```
-  git remote -v
+   git remote -v
  ```
           
 - puhs the commits
