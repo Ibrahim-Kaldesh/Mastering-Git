@@ -41,7 +41,7 @@ This file contains the most frequently used git commands.With this file , I thin
 - get the remot_name
  ```
   git remote -v
-```
+ ```
           
 - puhs the commits
   ```
@@ -64,9 +64,7 @@ This file contains the most frequently used git commands.With this file , I thin
   git remote add origin git@github.com:handle/repo_name.git
   ```
           
-- pull then push Repo           
-  from your local to          
-  remote
+- pull then push repo from your local to remote
   ```
   git push -u origin main
   ```
