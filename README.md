@@ -14,10 +14,7 @@ This file contains the most frequently used git commands.With this file , I thin
 
 ## Push & Pull Commands
 - clone the repo
- Markup :
-`
-git clone <repo linke from github
- `
+ Markup : `code(git clone <repo linke from github)`
          
           
 - To see changes (step by step)
